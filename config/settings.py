@@ -65,7 +65,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    },
+        'DIRS':[str(BASE_DIR.joinpath('templates'))],
+
+    }
+
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
